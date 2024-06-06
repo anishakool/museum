@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Города-герои</title>
+    <style>
+   button {
+      appearance: none;
+      border: 0;
+      border-radius: 5px;
+      background: #d88516;
+      color: #271600;
+      padding: 8px 16px;
+      font-size: 20px;
+   }
+    </style>
+</head>
+<body BGCOLOR="#271600" style="color:#f3f3f2">
+    <button type="button" onclick="location.href='mainPage'" >Главная</button>
+    <button type="button" onclick="location.href='gorodaGeroiPage'">Города-герои</button>
+    <button type="button" onclick="location.href='gorodaSlaviPage'">Города воинской славы</button>
+    <button type="button" onclick="location.href='gorodaDoblestiPage'">Города трудовой доблести</button>
+    <button type="button" onclick="location.href='memoryPage'" style="float: right">Вечная память</button>
+    <h1>Города герои</h1>
+    <form>
+      <select id="cityGeroi" name="cityGeroi" style="float: right; font-size: 20px">
+          {%for opt in names%}
+            <option value="{{opt}}">
+                {%for i in opt%}
+                {{i}}
+                {%endfor%}
+            </option>
+          {%endfor%}
+      </select>
+         <label for="cityGeroi" style="float: right; font-size: 20px">Выберите город:</label>
+    </form>
+</body>
+</html>
