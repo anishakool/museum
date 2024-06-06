@@ -471,6 +471,7 @@ melit.add_child(
 )
 spisokvs = [belgo, kursk, orel, vladikavkaz, malgo, rghev, elnya, elec, voroneg, luga, polarn, rost_na_don, tuapse, velluki, velnovg, dmitr, vazm, kronsht, narfom, pskov, kozel, arh, volokol, bransk, nalch, viborg, kalnadon, vladivost, tihvin, tver, anapa, kolpino, stosk, kovrov, lomon, petropavkam, tangarog, maloyar, mogh, habar, strussa, grozn, gatch, petrozav, feodos, meriupol, melit]
 # add the feature group to the map  (добавить группу объектов на карту)
+#sdfghjkl;lkjhgvfcx
 for i in spisokvs:
     goroda_vs.add_child(i)
 goroda_vs.save('vs.html')
