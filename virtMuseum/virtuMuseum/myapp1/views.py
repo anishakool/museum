@@ -27,3 +27,4 @@ def gorodaDoblesti_page(request):
 # Create your views here.
 def memory_page(request):
     return render(request, 'memoryPage.html')
+#gyufdyefycuwfcwyc
