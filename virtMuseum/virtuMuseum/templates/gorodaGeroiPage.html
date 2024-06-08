@@ -13,15 +13,31 @@
       padding: 8px 16px;
       font-size: 20px;
    }
+   .buttons{
+    margin-top: 15px;
+   }
+   .name{
+      float:left;
+      margin-top: 25px;
+      margin-left: 30px;
+   }
+   .spisok{
+        margin-top:40px;
+        margin-right: 30px;
+   }
+
     </style>
 </head>
 <body BGCOLOR="#271600" style="color:#f3f3f2">
-    <button type="button" onclick="location.href='mainPage'" >Главная</button>
-    <button type="button" onclick="location.href='gorodaGeroiPage'">Города-герои</button>
-    <button type="button" onclick="location.href='gorodaSlaviPage'">Города воинской славы</button>
-    <button type="button" onclick="location.href='gorodaDoblestiPage'">Города трудовой доблести</button>
-    <button type="button" onclick="location.href='memoryPage'" style="float: right">Вечная память</button>
-    <h1>Города герои</h1>
+<div class="buttons">
+        <button type="button" onclick="location.href='mainPage'" >Главная</button>
+        <button type="button" onclick="location.href='gorodaGeroiPage'">Города-герои</button>
+        <button type="button" onclick="location.href='gorodaSlaviPage'">Города воинской славы</button>
+        <button type="button" onclick="location.href='gorodaDoblestiPage'">Города трудовой доблести</button>
+        <button type="button" onclick="location.href='memoryPage'" style="float: right">Вечная память</button>
+</div>
+    <div class="name"><h1>Города герои</h1></div>
+    <div class="spisok">
     <form>
       <select id="cityGeroi" name="cityGeroi" style="float: right; font-size: 20px">
           {%for opt in names%}
@@ -34,5 +50,6 @@
       </select>
          <label for="cityGeroi" style="float: right; font-size: 20px">Выберите город:</label>
     </form>
+</div>
 </body>
 </html>
