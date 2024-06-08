@@ -11,7 +11,7 @@ def gorodaGeroi_page(request):
     connection = sqlite3.connect("db.sqlite3")
     cursor = connection.cursor()
 
-    names = cursor.execute("SELECT name FROM myapp1_gorodaGeroi").fetchall()
+    names = cursor.execute("SELECT nameGeroi FROM myapp1_gorodaGeroi").fetchall()
 
     cursor.close()
     print(names)
