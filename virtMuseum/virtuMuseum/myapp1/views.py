@@ -12,9 +12,10 @@ def gorodaGeroi_page(request):
     cursor = connection.cursor()
 
     names = cursor.execute("SELECT nameGeroi FROM myapp1_gorodaGeroi").fetchall()
+    bigGeroi= cursor.execute("SELECT bigGeroi FROM myapp1_gorodaGeroi").fetchall()
 
     cursor.close()
-    print(names)
+    print(names, )
 
 
     return render(request, 'gorodaGeroiPage.html', context={'names':names})
