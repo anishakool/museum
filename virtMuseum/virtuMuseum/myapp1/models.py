@@ -7,6 +7,7 @@ class gorodaGeroi(models.Model):
     bigGeroi=models.CharField(max_length=10000, blank=True)
     longGeroi=models.DecimalField(max_digits=9, decimal_places=6)
     latGeroi = models.DecimalField(max_digits=9, decimal_places=6)
+    pictGeroi=models.ImageField()
     def __str__(self):
         return self.nameGeroi
 
@@ -18,6 +19,7 @@ class gorodaSlavi(models.Model):
     bigSlavi = models.CharField(max_length=10000, blank=True)
     longSlavi = models.DecimalField(max_digits=9, decimal_places=6)
     latSlavi = models.DecimalField(max_digits=9, decimal_places=6)
+    pictSlavi=models.ImageField()
     def __str__(self):
         return self.nameSlavi
 
@@ -29,6 +31,7 @@ class gorodaDoblesti(models.Model):
     bigDoblesti = models.CharField(max_length=10000, blank=True)
     longDoblesti = models.DecimalField(max_digits=9, decimal_places=6)
     latDoblesti = models.DecimalField(max_digits=9, decimal_places=6)
+    pictDoblesti=models.ImageField()
     def __str__(self):
         return self.nameDoblesti
 # Create your models here.
