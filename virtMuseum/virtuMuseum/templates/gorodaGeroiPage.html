@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="{% static 'myapp1/script.js' %}"></script> 
+    <!-- {% static 'myapp1/script.js' %} -->
     <title>Города-герои</title>
     <style>
    button {
@@ -12,6 +16,7 @@
       color: #271600;
       padding: 8px 16px;
       font-size: 20px;
+      font-family: Arial;
    }
    .buttons{
     margin-top: 15px;
@@ -20,15 +25,31 @@
       float:left;
       margin-top: 25px;
       margin-left: 30px;
+      min-width: 40px;
+      min-height:40px ;
+      font-family: Arial;
    }
    .spisok{
         margin-top:40px;
         margin-right: 30px;
+        font-family: Arial;
    }
-
+   .smallGeroi{
+      float:left;
+      margin-top: 200px;
+   }
     </style>
+<!--      <script type="text/javascript">
+     function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    } -->
+<!-- </script>   -->
 </head>
-<body BGCOLOR="#271600" style="color:#f3f3f2">
+<body BGCOLOR="#271600" style="color:#f3f3f2 ">
 <div class="buttons">
         <button type="button" onclick="location.href='mainPage'" >Главная</button>
         <button type="button" onclick="location.href='gorodaGeroiPage'">Города-герои</button>
@@ -36,21 +57,39 @@
         <button type="button" onclick="location.href='gorodaDoblestiPage'">Города трудовой доблести</button>
         <button type="button" onclick="location.href='memoryPage'" style="float: right">Вечная память</button>
 </div>
-    <div class="name"><h1>Города герои</h1></div>
-    <div class="spisok">
-    <form>
-      <select id="cityGeroi" name="cityGeroi" style="float: right; font-size: 20px">
-          {%for opt in names%}
-            <option value="{{opt}}">
-                {%for i in opt%}
-                {{i}}
-
+    <div class="name"><h1><font face="Arial">Город-герой</font></h1>
+    <br>
+    </div>
+     <div class="spisok">
+        <form>
+            <select id="cityGeroi" name="cityGeroi" style="float: right; font-size: 20px">
+                {%for opt in cities%}
+                    <option value="{{opt}}">
+                        {{opt.0}}
+                    </option>
                 {%endfor%}
-            </option>
-          {%endfor%}
-      </select>
-         <label for="cityGeroi" style="float: right; font-size: 20px">Выберите город:</label>
-    </form>
-</div>
+            </select>
+                <label for="cityGeroi" style="float: right; font-size: 20px">Выберите город:</label>
+            </form>
+</div>  
+
+<!-- <div class="spisok">
+    <form>
+    
+    <select onchange="if (this.value) window.location.href=this.value;" style="float: right; font-size: 20px"> 
+        <option selected>Выберете город</option>
+            <option value="Moscow">Москва</option>
+            <option value="Petersburg">Питер</option>
+            <option value="Volgograd">Волгоград</option>
+    </select>
+    <label for="city-select" style="float: right; font-size: 20px">Выберите город:</label>
+</form> -->
+
+<div class="smallGeroi"> </div>
+<div class="smallGeroiDesc"></div>
+<!-- <div class="smallGeroiImg"><img src="static/image/{{image}}"></img></div> -->
+<img id="smallGeroiImg" src="static/image/{{image}}"/>
+
+
 </body>
 </html>

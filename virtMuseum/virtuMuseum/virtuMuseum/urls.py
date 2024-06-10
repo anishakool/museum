@@ -17,7 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from myapp1.views import main_page, gorodaGeroi_page, gorodaSlavi_page, gorodaDoblesti_page, memory_page
-
+#Moscow_page, Petersburg_page, Volgograd_page
+#from django.conf import settings
+#from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +28,9 @@ urlpatterns = [
     path('gorodaGeroiPage', gorodaGeroi_page),
     path('gorodaSlaviPage', gorodaSlavi_page),
     path('gorodaDoblestiPage', gorodaDoblesti_page),
-    path('memoryPage', memory_page)
+    path('memoryPage', memory_page),
+    #static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
+    #path('Moscow', Moscow_page),
+    #path('Petersburg', Petersburg_page),
+    #path('Volgograd', Volgograd_page),
 ]
