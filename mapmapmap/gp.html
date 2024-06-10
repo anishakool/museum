@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_69c3c23da3bbe53d520608f45c56c0a7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_69c3c23da3bbe53d520608f45c56c0a7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_69c3c23da3bbe53d520608f45c56c0a7 = L.map(
+                "map_69c3c23da3bbe53d520608f45c56c0a7",
+                {
+                    center: [64.6863136, 97.7453061],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_997a2acde868b5d23909fa1b73d738c4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_997a2acde868b5d23909fa1b73d738c4.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_13e5f38051d03e5c86ce1f54259a45b2 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_dbed330cade99fbecf73a74de80d07a8 = L.marker(
+                [55.755819, 37.617644],
+                {"radius": 5}
+            ).addTo(feature_group_13e5f38051d03e5c86ce1f54259a45b2);
+        
+    
+            var icon_bfce6f91bbe8429aab73f29a896dc6bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dbed330cade99fbecf73a74de80d07a8.setIcon(icon_bfce6f91bbe8429aab73f29a896dc6bb);
+        
+    
+        var popup_b09f9dd6c9f720cd114f42f20b3e64dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5659a2dfd8fe3216f7c7d0ad088c2f84 = $(`<div id="html_5659a2dfd8fe3216f7c7d0ad088c2f84" style="width: 100.0%; height: 100.0%;">МОСКВА. 8 мая 1965 Москва получила почетное звание города героя.</div>`)[0];
+                popup_b09f9dd6c9f720cd114f42f20b3e64dd.setContent(html_5659a2dfd8fe3216f7c7d0ad088c2f84);
+            
+        
+
+        marker_dbed330cade99fbecf73a74de80d07a8.bindPopup(popup_b09f9dd6c9f720cd114f42f20b3e64dd)
+        ;
+
+        
+    
+    
+            feature_group_13e5f38051d03e5c86ce1f54259a45b2.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_51e12094b3f50bc00e14fa809f5b5855 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_5dce25106e9796a6db3ef742f473dd48 = L.marker(
+                [59.938676, 30.314494],
+                {"radius": 5}
+            ).addTo(feature_group_51e12094b3f50bc00e14fa809f5b5855);
+        
+    
+            var icon_3f8857584b0568f671155acf3bf00022 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5dce25106e9796a6db3ef742f473dd48.setIcon(icon_3f8857584b0568f671155acf3bf00022);
+        
+    
+        var popup_70078000dde1df0ce41a6d7fd31368bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2069b068f6b085ed91201ba57b0a840 = $(`<div id="html_e2069b068f6b085ed91201ba57b0a840" style="width: 100.0%; height: 100.0%;">ЛЕНИНГРАД. 8 мая 1965 Санкт-Петербург получил почетное звание города героя.</div>`)[0];
+                popup_70078000dde1df0ce41a6d7fd31368bc.setContent(html_e2069b068f6b085ed91201ba57b0a840);
+            
+        
+
+        marker_5dce25106e9796a6db3ef742f473dd48.bindPopup(popup_70078000dde1df0ce41a6d7fd31368bc)
+        ;
+
+        
+    
+    
+            feature_group_51e12094b3f50bc00e14fa809f5b5855.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_48f1b94f4f791419ff28f76b05d01e76 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_30d8015634b8cf032ca6da6b0f110ba4 = L.marker(
+                [48.707067, 44.516975],
+                {"radius": 5}
+            ).addTo(feature_group_48f1b94f4f791419ff28f76b05d01e76);
+        
+    
+            var icon_4d692ff655f313c4d0759a20901e3738 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_30d8015634b8cf032ca6da6b0f110ba4.setIcon(icon_4d692ff655f313c4d0759a20901e3738);
+        
+    
+        var popup_03cd06e0eb8d11215879b987c7d1014f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef164cdd7ad2f338c3772c8ce7eb885b = $(`<div id="html_ef164cdd7ad2f338c3772c8ce7eb885b" style="width: 100.0%; height: 100.0%;">ВОЛГОГРАД. 8 мая 1965 Волгоград получил почетное звание города героя.</div>`)[0];
+                popup_03cd06e0eb8d11215879b987c7d1014f.setContent(html_ef164cdd7ad2f338c3772c8ce7eb885b);
+            
+        
+
+        marker_30d8015634b8cf032ca6da6b0f110ba4.bindPopup(popup_03cd06e0eb8d11215879b987c7d1014f)
+        ;
+
+        
+    
+    
+            feature_group_48f1b94f4f791419ff28f76b05d01e76.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_2fb0c5af817121f20209ffcada0aaa15 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_3894bf70856422b3b9f9ed7a565bf1d5 = L.marker(
+                [50.450441, 30.52355],
+                {"radius": 5}
+            ).addTo(feature_group_2fb0c5af817121f20209ffcada0aaa15);
+        
+    
+            var icon_af94a6360bd28d89c17065b74a204917 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3894bf70856422b3b9f9ed7a565bf1d5.setIcon(icon_af94a6360bd28d89c17065b74a204917);
+        
+    
+        var popup_5d58c6b65dcb02d3de6620b20301e713 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8419fe9dbc809a29de2e2785f0b26fb4 = $(`<div id="html_8419fe9dbc809a29de2e2785f0b26fb4" style="width: 100.0%; height: 100.0%;">КИЕВ. 8 мая 1965 Киев получил почетное звание города героя.</div>`)[0];
+                popup_5d58c6b65dcb02d3de6620b20301e713.setContent(html_8419fe9dbc809a29de2e2785f0b26fb4);
+            
+        
+
+        marker_3894bf70856422b3b9f9ed7a565bf1d5.bindPopup(popup_5d58c6b65dcb02d3de6620b20301e713)
+        ;
+
+        
+    
+    
+            feature_group_2fb0c5af817121f20209ffcada0aaa15.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_c1b3b4545942656bdd4bd4070a20595a = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_d77748255a43e2780f348c5314414900 = L.marker(
+                [46.484213, 30.731689],
+                {"radius": 5}
+            ).addTo(feature_group_c1b3b4545942656bdd4bd4070a20595a);
+        
+    
+            var icon_9e3ebca568c945c680b19c1a67c9eaf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d77748255a43e2780f348c5314414900.setIcon(icon_9e3ebca568c945c680b19c1a67c9eaf8);
+        
+    
+        var popup_ddc87bf8618c020033a5e1a208586f23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b941b32563944456dd0d7d6b6d695153 = $(`<div id="html_b941b32563944456dd0d7d6b6d695153" style="width: 100.0%; height: 100.0%;">ОДЕССА. 8 мая 1965 Одесса получил почетное звание города героя.</div>`)[0];
+                popup_ddc87bf8618c020033a5e1a208586f23.setContent(html_b941b32563944456dd0d7d6b6d695153);
+            
+        
+
+        marker_d77748255a43e2780f348c5314414900.bindPopup(popup_ddc87bf8618c020033a5e1a208586f23)
+        ;
+
+        
+    
+    
+            feature_group_c1b3b4545942656bdd4bd4070a20595a.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_d2d167c0b18a36554429f164a80f214a = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_1d32598e59ea7af525269d19851cf0ae = L.marker(
+                [44.61602, 33.524471],
+                {"radius": 5}
+            ).addTo(feature_group_d2d167c0b18a36554429f164a80f214a);
+        
+    
+            var icon_f26548e10e58a23f7e3e61ccd6f3e1fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1d32598e59ea7af525269d19851cf0ae.setIcon(icon_f26548e10e58a23f7e3e61ccd6f3e1fc);
+        
+    
+        var popup_a132b8360a0425f9d1209e1f96401866 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5135ed88f4a852d5e186820a65711708 = $(`<div id="html_5135ed88f4a852d5e186820a65711708" style="width: 100.0%; height: 100.0%;">СЕВАСТОПОЛЬ. 8 мая 1965 Севастополь получил почетное звание города героя.</div>`)[0];
+                popup_a132b8360a0425f9d1209e1f96401866.setContent(html_5135ed88f4a852d5e186820a65711708);
+            
+        
+
+        marker_1d32598e59ea7af525269d19851cf0ae.bindPopup(popup_a132b8360a0425f9d1209e1f96401866)
+        ;
+
+        
+    
+    
+            feature_group_d2d167c0b18a36554429f164a80f214a.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_ba4c192cdf1c22b4cd06999a13b407fa = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_86b7c9988e73238095345feb632479c1 = L.marker(
+                [44.723771, 37.768813],
+                {"radius": 5}
+            ).addTo(feature_group_ba4c192cdf1c22b4cd06999a13b407fa);
+        
+    
+            var icon_c7dc4cfc27a76dde92f37f6125c2413a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_86b7c9988e73238095345feb632479c1.setIcon(icon_c7dc4cfc27a76dde92f37f6125c2413a);
+        
+    
+        var popup_8316de6938c802a293970abc1736015b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb9e7ffd685254c597b93e2cfefc9ddc = $(`<div id="html_cb9e7ffd685254c597b93e2cfefc9ddc" style="width: 100.0%; height: 100.0%;">НОВОРОССИЙСК. 14 сентября 1973 Новороссийск получил почетное звание города героя.</div>`)[0];
+                popup_8316de6938c802a293970abc1736015b.setContent(html_cb9e7ffd685254c597b93e2cfefc9ddc);
+            
+        
+
+        marker_86b7c9988e73238095345feb632479c1.bindPopup(popup_8316de6938c802a293970abc1736015b)
+        ;
+
+        
+    
+    
+            feature_group_ba4c192cdf1c22b4cd06999a13b407fa.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_e830e8e89ca6cb4f98d6407c326012ee = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_4502fc9d310891dd3ace7a208277baa8 = L.marker(
+                [45.356219, 36.467378],
+                {"radius": 5}
+            ).addTo(feature_group_e830e8e89ca6cb4f98d6407c326012ee);
+        
+    
+            var icon_be4992bb5679429dba19d4d7a9ae622a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4502fc9d310891dd3ace7a208277baa8.setIcon(icon_be4992bb5679429dba19d4d7a9ae622a);
+        
+    
+        var popup_3c31aad224ef3075b713339d13e5f6e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77a6def92a97b9aada8cea6b6ccf35e1 = $(`<div id="html_77a6def92a97b9aada8cea6b6ccf35e1" style="width: 100.0%; height: 100.0%;">КЕРЧЬ. 14 сентября 1973 Керчь получил почетное звание города героя.</div>`)[0];
+                popup_3c31aad224ef3075b713339d13e5f6e6.setContent(html_77a6def92a97b9aada8cea6b6ccf35e1);
+            
+        
+
+        marker_4502fc9d310891dd3ace7a208277baa8.bindPopup(popup_3c31aad224ef3075b713339d13e5f6e6)
+        ;
+
+        
+    
+    
+            feature_group_e830e8e89ca6cb4f98d6407c326012ee.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_669c2946314a157488a9de0015a96686 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_71adec8b2ef5f5dd1f68c2a3c178bf08 = L.marker(
+                [53.902284, 27.561831],
+                {"radius": 5}
+            ).addTo(feature_group_669c2946314a157488a9de0015a96686);
+        
+    
+            var icon_63c9d093086893c630aed6d691bb357e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_71adec8b2ef5f5dd1f68c2a3c178bf08.setIcon(icon_63c9d093086893c630aed6d691bb357e);
+        
+    
+        var popup_1dca1649136201de4ff7c5e1199a2431 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_129ce1dd53440dc0d3e8f56e9917e65e = $(`<div id="html_129ce1dd53440dc0d3e8f56e9917e65e" style="width: 100.0%; height: 100.0%;">МИНСК. 26 июня 1974 Минск получил почетное звание города героя.</div>`)[0];
+                popup_1dca1649136201de4ff7c5e1199a2431.setContent(html_129ce1dd53440dc0d3e8f56e9917e65e);
+            
+        
+
+        marker_71adec8b2ef5f5dd1f68c2a3c178bf08.bindPopup(popup_1dca1649136201de4ff7c5e1199a2431)
+        ;
+
+        
+    
+    
+            feature_group_669c2946314a157488a9de0015a96686.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_43b7d5584ec686cff1fdf6ba437c24f3 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_51549ce5bc2d846ed85deb20cdda7522 = L.marker(
+                [54.193122, 37.617348],
+                {"radius": 5}
+            ).addTo(feature_group_43b7d5584ec686cff1fdf6ba437c24f3);
+        
+    
+            var icon_c8eacd32862fd3f59f41256f8fb219e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51549ce5bc2d846ed85deb20cdda7522.setIcon(icon_c8eacd32862fd3f59f41256f8fb219e7);
+        
+    
+        var popup_2a64f56b1fc357da70d6435e388dd429 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_656ab602556c48ac9904f2082ef4157a = $(`<div id="html_656ab602556c48ac9904f2082ef4157a" style="width: 100.0%; height: 100.0%;">ТУЛА. 7 декабря 1976 Тула получил почетное звание города героя.</div>`)[0];
+                popup_2a64f56b1fc357da70d6435e388dd429.setContent(html_656ab602556c48ac9904f2082ef4157a);
+            
+        
+
+        marker_51549ce5bc2d846ed85deb20cdda7522.bindPopup(popup_2a64f56b1fc357da70d6435e388dd429)
+        ;
+
+        
+    
+    
+            feature_group_43b7d5584ec686cff1fdf6ba437c24f3.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_a8cbadfc449004d4a4d6d6d81cb1a32d = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_72838fee5c0d769be2c81654bdd130f9 = L.marker(
+                [68.970663, 33.074918],
+                {"radius": 5}
+            ).addTo(feature_group_a8cbadfc449004d4a4d6d6d81cb1a32d);
+        
+    
+            var icon_4262097770463e498307e1ecd64a05e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72838fee5c0d769be2c81654bdd130f9.setIcon(icon_4262097770463e498307e1ecd64a05e9);
+        
+    
+        var popup_1d56418632d66c75af1fd15e18844cdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdea2825af7d601529f2bbb17105132d = $(`<div id="html_fdea2825af7d601529f2bbb17105132d" style="width: 100.0%; height: 100.0%;">МУРМАНСК. 6 мая 1985 Мурманск получил почетное звание города героя.</div>`)[0];
+                popup_1d56418632d66c75af1fd15e18844cdb.setContent(html_fdea2825af7d601529f2bbb17105132d);
+            
+        
+
+        marker_72838fee5c0d769be2c81654bdd130f9.bindPopup(popup_1d56418632d66c75af1fd15e18844cdb)
+        ;
+
+        
+    
+    
+            feature_group_a8cbadfc449004d4a4d6d6d81cb1a32d.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+    
+            var feature_group_26ed2f805b4b10ea25480d41dc4003d4 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_a1204d0d79fedd1a1e3751174d14212f = L.marker(
+                [54.782495, 32.048054],
+                {"radius": 5}
+            ).addTo(feature_group_26ed2f805b4b10ea25480d41dc4003d4);
+        
+    
+            var icon_a2440b781c7c92d337dcaf2c24487b50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a1204d0d79fedd1a1e3751174d14212f.setIcon(icon_a2440b781c7c92d337dcaf2c24487b50);
+        
+    
+        var popup_88f4a9a7c17d732c5dbfbda6422ce15f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_beeef0548c3181dd8828096bbab9c703 = $(`<div id="html_beeef0548c3181dd8828096bbab9c703" style="width: 100.0%; height: 100.0%;">СМОЛЕНСК. 6 мая 1985 Смоленск получил почетное звание города героя.</div>`)[0];
+                popup_88f4a9a7c17d732c5dbfbda6422ce15f.setContent(html_beeef0548c3181dd8828096bbab9c703);
+            
+        
+
+        marker_a1204d0d79fedd1a1e3751174d14212f.bindPopup(popup_88f4a9a7c17d732c5dbfbda6422ce15f)
+        ;
+
+        
+    
+    
+            feature_group_26ed2f805b4b10ea25480d41dc4003d4.addTo(map_69c3c23da3bbe53d520608f45c56c0a7);
+        
+</script>
+</html>
